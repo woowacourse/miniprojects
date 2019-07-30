@@ -1,0 +1,60 @@
+@media only screen and (min-width: 480px) {
+    .mobile-logo {
+        display: none;
+    }
+
+    .desktop-logo {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .mobile-logo {
+        display: block;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+}
+
+header ul.nav-right li, header ul.nav-left li {
+    height: 76px;
+}
+
+.header {
+    background-color: white;
+    padding: 0 16px;
+    height: 76px;
+    top: 0px;
+}
+
+.logo {
+    width: 170px;
+    height: auto;
+    line-height: 76px;
+    position: relative;
+}
+
+.user-profile {
+    height: 43px;
+}
+
+.profile-img {
+    width: 24px;
+    height: 24px;
+}
+
+.add-comment textarea::placeholder {
+    color: #666;
+}
+
+.mini-profile-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.activated-heart {
+    color:#ed4956;
+}
