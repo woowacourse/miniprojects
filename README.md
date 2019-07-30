@@ -9,20 +9,15 @@
   <img src="https://img.shields.io/github/license/daybrush/moveable.svg?style=flat-square&label=license&color=08CE5D"/>
   </a>
 </p>
-<p align="middle">성공한 서비스들을 따라 만들어보는 팀 미니프로젝트 주제</p>
-<p align="middle">
-    <a href="https://woowacourse.github.io/miniprojects/wootecobook/"><strong>Wootecobook</strong></a> /
-    <a href="https://woowacourse.github.io/miniprojects/woostagram/"><strong>Woostagram</strong></a> /
-    <a href="https://woowacourse.github.io/miniprojects/wootube/"><strong>Wootube</strong></a>
-</p>
+<p align="middle">성공한 서비스들을 따라 만들어보는 팀 미니프로젝트</p>
 
-
+<br>
 
 ## 🔥 Projects!
 
-- **wootecobook** 친구 관계를 기반으로 글, 텍스트 영상들을 공유하는 콘텐츠 플랫폼
-- **wootube** 동영상을 자유롭게 올리거나 볼 수 있는 비디오 콘텐츠 플랫폼
-- **woostagram** 이미지 공유 위주의 콘텐츠 플랫폼
+- [**wootecobook**](https://woowacourse.github.io/miniprojects/wootecobook) 친구 관계를 기반으로 글, 텍스트 영상들을 공유하는 콘텐츠 플랫폼
+- [**wootube**](https://woowacourse.github.io/miniprojects/wootube) 동영상을 자유롭게 올리거나 볼 수 있는 비디오 콘텐츠 플랫폼
+- [**woostagram**](https://woowacourse.github.io/miniprojects/woostagram) 이미지 공유 위주의 콘텐츠 플랫폼
 
 <br>
 
