@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <title>wootecobook</title>
+    <meta name="robots" content="index, follow">
+
+    <meta name="keyword" content="우아한테크코스, 프로그래밍, 개발자, 백엔드, 프론트엔드, Backend, Frontend, IOS, Android">
+    <meta name="description" id="metaDesc" content="우아한테크코스 크루 ooo의 개발 블로그">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="우아한테크코스">
+    <meta property="og:description" id="metaOgDesc" content="우테코북">
+    <meta property="og:image" content="images/logo/logo-thumnail-bg.jpg">
+    <meta property="og:url" content="https://woowacourse.github.io/">
+
+    <meta name="twitter:card" content="website">
+    <meta name="twitter:title" content="우아한테크코스">
+    <meta name="twitter:description" id="metaTwitterDesc" content="우테코북">
+    <meta name="twitter:image" content="images/logo/logo-thumnail-bg.jpg">
+    <meta name="twitter:domain" content="https://woowacourse.github.io/">
+
+    <link rel="shortcut icon" href="images/logo/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri:400,400i|Source+Sans+Pro:400,400i,600,700'">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/customize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+        header ul.nav-right li, header ul.nav-left li {
+            height: 43px;
+        }
+
+        .header {
+            background-color: #4267b2;
+            border-bottom: 1px solid #29487d;
+            color: white;
+            height: 53px;
+            top: 0px;
+        }
+
+        .logo {
+            background-repeat: no-repeat;
+            -webkit-background-size: 283px 396px;
+            background-size: 283px 396px;
+            background-position: -125px -304px;
+            height: 24px;
+            outline: none;
+            overflow: hidden;
+            text-indent: -999px;
+            white-space: nowrap;
+            width: 24px;
+        }
+
+        .header .header-container .nav-left>li>a, .header .header-container .nav-right>li>a {
+            min-height: 43px;
+        }
+
+        .search{
+            width: 400px;
+            height: 25px;
+            max-width: 400px;
+            position: absolute;
+            top: 4px;
+            left: 50px;
+            margin: 5px 200px 5px 5px;
+            padding: 2px 2px 2px 4px;
+            border-radius: 3px;
+            background: white;
+        }
+        .searchbox{
+            width: 378px;
+            height: 18px;
+            position: absolute;
+            top: 3px;
+            left: 7px;
+            border: 0 none white;
+            margin: 0;
+            padding: 0;
+            font-size: 10pt;
+            outline-style: none;
+        }
+        .search-btn {
+            width: 27px;
+            height: 17px;
+            position: absolute;
+            top: 4px;
+            left: 370px;
+            background: none;
+            background-image: url('images/default/icons.png');
+            background-position: -26px -202px;
+            border-style: none;
+            border-left: 1px solid rgb(220, 220, 220);
+        }
+
+        .user-profile {
+            height: 43px;
+        }
+
+        .profile-img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .friend-btn {
+            background-size: 283px 396px;
+            background-position: 0 -354px;
+        }
+
+        .message-btn {
+            background-size: 283px 396px;
+            background-position: -50px -354px;
+        }
+
+        .notification-btn {
+            background-size: 283px 396px;
+            background-position: -175px -329px;
+        }
+
+        .friend-btn, .message-btn, .notification-btn {
+            background-image: url('images/default/icons.png');
+            background-repeat: no-repeat;
+            height: 24px;
+            width: 24px;
+        }
+
+        .composor-tools .attachement-icon {
+
+        }
+
+        .story-user-list {
+            height: 55px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <header id="header" class="header navbar">
+        <div class="header-container max-width-lg mx-auto">
+            <ul class="nav-left mrg-left-0">
+                <li>
+                    <a href="index.html" class="mrg-vertical-10 mrg-horizon-5">
+                        <div class="logo" style="background-image: url('images/default/icons.png')"></div>
+                    </a>
+                </li>
+                <li>
+                    <span class="search">
+                        <form action="" method="get">
+                            <input type="text" class="searchbox" placeholder="검색">
+                            <button type="submit" class="search-btn">
+                                <i class="ti-search"></i>
+                            </button>
+                        </form>
+                    </span>
+                </li>
+            </ul>
+            <ul class="nav-right">
+                <li class="user-profile">
+                    <a>
+                        <img class="profile-img img-fluid" src="images/default/eastjun_profile.jpg" alt="">
+                        <div class="user-info mrg-left-5">
+                            <span class="name pdd-right-5 text-white text-bold">eastjun</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="pointer">
+                        <span class="text-white text-bold font-size-12">홈</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="pointer">
+                        <span class="text-white text-bold font-size-12">만들기</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="friend-btn pointer mrg-vertical-10 mrg-horizon-5"></div>
+                </li>
+                <li>
+                    <div class="message-btn pointer mrg-vertical-10 mrg-horizon-5"></div>
+                </li>
+                 <li>
+                     <div class="notification-btn pointer mrg-vertical-10 mrg-horizon-5"></div>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+
+    <div class="container-fluid max-width-lg mx-auto mrg-top-60">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="left">
+                    <div class="left-profile">
+                        <a class="pointer">
+                            <img class="img-circle width-25px" src="images/default/eastjun_profile.jpg">
+                            <div class="left-name-edit pointer">
+                                <a class="left-name">eastjun</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="left-menus">
+                        <ul class="left-sub-menus">
+                            <li class="left-sub-sub-menus mrg-btm-5 pointer">
+                                <div class="icons newspeed"></div>
+                                <span class="icon-name">  뉴스피드</span>
+                            </li>
+                            <li class="left-sub-sub-menus mrg-btm-5 pointer">
+                                <div class="icons message"></div>
+                                <span class="icon-name">  Messenger</span>
+                            </li>
+                            <li class="left-sub-sub-menus mrg-btm-5 pointer">
+                                <div class="icons watch"></div>
+                                <span class="icon-name">  Watch</span>
+                            </li>
+                        </ul>
+                        <ul class="left-sub-menus">
+                            <div class="left-group-title">바로가기</div>
+                            <li class="left-sub-sub-menus pointer">
+                                <div class="icons group"></div>
+                                <span class="icon-name">  우테코 1기</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="social-feeds">
+                    <div class="card widget-compose">
+                        <h6 class="border bottom width-100 pdd-btm-5">게시물 만들기</h6>
+                        <textarea class="form-control" placeholder="oo님, 무슨 생각을 하고 계신가요?"></textarea>
+                        <ul class="composor-tools border bottom">
+                            <li>
+                                <a href="">
+                                    <i class="ti-image text-info pdd-right-5"></i>
+                                    <span class="attachement-icon"></span>
+                                    <span class="text-normal font-size-13">사진/동영상</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ti-user text-danger pdd-right-5"></i>
+                                    <span class="text-normal font-size-13">친구 태그하기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="ti-face-smile text-warning pdd-right-5"></i>
+                                    <span class="text-normal font-size-13">기분/활동</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card widget-feed padding-15">
+                    <div class="feed-header">
+                        <ul class="list-unstyled list-info">
+                            <li>
+                                <img class="thumb-img img-circle" src="images/default/eastjun_profile.jpg" alt="">
+                                <div class="info">
+                                    <a href="" class="title no-pdd-vertical text-semibold inline-block">eastjun</a>
+                                    <span>님이 그룹에 링크를 공유했습니다.</span>
+                                    <span class="sub-title">
+                                        <span>15시간 </span>
+                                    </span>
+                                    <a class="pointer absolute top-0 right-0" data-toggle="dropdown" aria-expanded="false">
+                                        <span class="btn-icon text-dark">
+                                            <i class="ti-more font-size-16"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="pointer">
+                                                <i class="ti-trash pdd-right-10 text-dark"></i>
+                                                <span class="">게시글 삭제</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feed-body">
+                       <p>
+                           <span> 해리와 션의 MVC 패턴 </span> <br>
+                            <iframe src="https://www.youtube.com/embed/uoVNJkyXX0I" height="380" allowfullscreen></iframe>
+                        </p>
+                    </div>
+                    <ul class="feed-action border bottom">
+                        <li>
+                            <a href="">
+                                <i class="fa fa-thumbs-o-up text-info"></i>
+                                <span class="font-size-13 lh-2-1">67</span>
+                            </a>
+                        </li>
+                        <li class="float-right">
+                            <a href="" class="no-padding">
+                                <span  class="font-size-13">공유 78회</span>
+                            </a>
+                        </li>
+                        <li class="float-right">
+                            <a href="">
+                                <span class="font-size-13">댓글 2개</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="feed-footer">
+                        <div class="comment">
+                            <ul class="list-unstyled list-info">
+                                <li class="comment-item">
+                                    <img class="thumb-img img-circle" src="images/default/eastjun_profile.jpg" alt="">
+                                    <div class="info">
+                                        <a href="" class="title no-pdd-vertical text-bold inline-block">eastjun</a>
+                                        <span class="sub-title inline-block pull-right">
+                                            <i class="ti-timer pdd-right-5"></i>
+                                            <span>6 min ago</span>
+                                        </span>
+                                        <p class="width-80">크 MVC패턴을 직접 프로젝트에 적용해봤나요?</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="add-comment">
+                                <textarea rows="1" class="form-control" placeholder="Add comment"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 pdd-right-0">
+                <div class="card">
+                    <h5 class="card-title mrg-top-15 mrg-btm-0 mrg-horizon-15">스토리</h5>
+                    <div class="card-body">
+                        <ul class="list-unstyled list-info">
+                            <li class="story-user-list mrg-btm-10">
+                                <img class="thumb-img img-circle img-circle-blue" src="images/default/eastjun_profile.jpg" alt="">
+                                <div class="info mrg-left-5 pdd-top-5">
+                                    <a href="" class="title no-pdd-vertical text-semibold inline-block text-bold">Brown</a>
+                                    <span class="sub-title">
+                                        <span>18시간전</span>
+                                </span>
+                                </div>
+                            </li>
+                            <li class="story-user-list mrg-btm-10">
+                                <img class="thumb-img img-circle img-circle-blue" src="images/default/eastjun_profile.jpg" alt="">
+                                <div class="info mrg-left-5 pdd-top-5">
+                                    <a href="" class="title no-pdd-vertical text-semibold inline-block text-bold">Brown</a>
+                                    <span class="sub-title">
+                                        <span>18시간전</span>
+                                </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border top">
+                        <div class="pdd-vertical-15 pdd-horizon-20 text-center">
+                            <a href="" class="text-semibold text-dark">More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+<!--<script src="js/index.js"></script>-->
+</body>
+</html>

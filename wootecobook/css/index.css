@@ -1,0 +1,118 @@
+.left{
+    width: 164px;
+    position: relative;
+    display: block;
+    float: left;
+    word-wrap: break-word;
+}
+.left-profile{
+    display: block;
+    height: 25px;
+    word-wrap: break-word;
+}
+.left-photo{
+    height: 38px !important;
+    width: 38px !important;
+    margin-right: 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.left-name-edit{
+    width: 130px;
+    float: right;
+    clear: left;
+    display: block;
+    padding-top: 4px;
+}
+.left-name{
+    height: 17px;
+    width: 112px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    display: block;
+}
+.left-name:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    display: block;
+}
+.left-edit{
+    height: 17px;
+    width: 112px;
+    display: block;
+}
+.left-edit:hover{
+    height: 17px;
+    width: 112px;
+    text-decoration: underline;
+    display: block;
+}
+.left-sub-menus{
+    height: 100px;
+    width: 164px;
+    margin: 12px 0;
+    padding: 0;
+    list-style-type: none;
+}
+.left-sub-sub-menus{
+    height: 24px;
+    width: 164px;
+}
+.left-sub-sub-menus:hover{
+    height: 24px;
+    width: 164px;
+    font-weight: bold;
+    background-color: rgba(203,204,207,0.4);
+}
+.icons {
+    height: 20px;
+    width: 20px;
+    margin: 3.5px;
+    vertical-align: middle;
+    display: inline-block;
+    background-image: url('/images/default/icons2.png');
+}
+.icon-name {
+    vertical-align: middle;
+}
+
+.icons.newspeed {
+    background-position: 0 -711px;
+    background-size: 37px 1608px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+.icons.message {
+    background-position: 0 -186px;
+    background-size: 37px 1608px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+.icons.watch {
+    background-position: 0 -1110px;
+    background-size: 37px 1608px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.icons.group {
+    background-position: 0 -879px;
+    background-size: 37px 1608px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.left-group-title{
+    font-weight: bold;
+    color: #616770;
+}

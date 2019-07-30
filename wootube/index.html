@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <title>wootube</title>
+    <meta name="robots" content="index, follow">
+
+    <meta name="keyword" content="우아한테크코스, 프로그래밍, 개발자, 백엔드, 프론트엔드, Backend, Frontend, IOS, Android">
+    <meta name="description" id="metaDesc" content="우아한테크코스 크루 ooo의 개발 블로그">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="우아한테크코스">
+    <meta property="og:description" id="metaOgDesc" content="우튜브">
+    <meta property="og:image" content="images/logo/logo-thumnail-bg.jpg">
+    <meta property="og:url" content="https://woowacourse.github.io/">
+
+    <meta name="twitter:card" content="website">
+    <meta name="twitter:title" content="우아한테크코스">
+    <meta name="twitter:description" id="metaTwitterDesc" content="우튜브">
+    <meta name="twitter:image" content="images/logo/logo-thumnail-bg.jpg">
+    <meta name="twitter:domain" content="https://woowacourse.github.io/">
+
+    <link rel="shortcut icon" href="images/logo/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri:400,400i|Source+Sans+Pro:400,400i,600,700'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/customize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+
+    <style>
+        header ul.nav-right li, header ul.nav-left li {
+            height: 56px;
+        }
+
+        .header {
+            background-color: white;
+            padding: 0 16px;
+            height: 56px;
+            top: 0px;
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+            line-height: 56px;
+            position: relative;
+        }
+
+        .search{
+            width: 400px;
+            height: 25px;
+            max-width: 400px;
+            position: absolute;
+            top: 4px;
+            left: 50px;
+            margin: 5px 200px 5px 5px;
+            padding: 2px 2px 2px 4px;
+            border-radius: 3px;
+            background: white;
+        }
+        .searchbox{
+            width: 378px;
+            height: 18px;
+            position: absolute;
+            top: 3px;
+            left: 7px;
+            border: 0 none white;
+            margin: 0;
+            padding: 0;
+            font-size: 10pt;
+            outline-style: none;
+        }
+        .search-btn {
+            width: 27px;
+            height: 17px;
+            position: absolute;
+            top: 4px;
+            left: 370px;
+            background: none;
+            background-image: url('images/default/icons.png');
+            background-position: -26px -202px;
+            border-style: none;
+            border-left: 1px solid rgb(220, 220, 220);
+        }
+
+        .user-profile {
+            height: 43px;
+        }
+
+        .profile-img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .video-container {
+            position: relative;
+            height: 0;
+            /*max-height: 370px;*/
+            overflow: hidden;
+        }
+
+        .video-container iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .social-cover .cover-img {
+            height: 130px;
+        }
+
+        .banner-owner-img {
+            width: 100px;
+            left: 30px;
+        }
+
+        .banner-info {
+            width: calc(100% - 120px);
+        }
+
+        .max-height-400px {
+            max-height: 400px;
+        }
+
+        .no-padding {
+            padding: 0;
+        }
+
+        .padding-2 {
+            padding: 2px;
+        }
+
+        .padding-7 {
+            padding: 7px;
+        }
+
+        .padding-8 {
+            padding: 8px;
+        }
+
+        .side-nav {
+            background-color: whitesmoke;
+        }
+
+        .side-nav .title {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <header id="header" class="header navbar shadow-sm">
+        <div class="header-container">
+            <ul class="nav-left mrg-left-0 padding-8">
+                <li>
+                    <a class="side-nav-toggle" href="javascript:void(0);">
+                        <i class="material-icons">menu</i>
+                    </a>
+                </li>
+                <li>
+                    <img class="logo" src="images/logo/youtube-logo.png">
+                </li>
+                <li class="search-box">
+                    <a class="search-toggle no-pdd-right" href="javascript:void(0);">
+                        <i class="search-icon ti-search pdd-right-10"></i>
+                        <i class="search-icon-close ti-close pdd-right-10"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-right padding-8">
+
+                <li class="">
+                    <a class="pointer">
+                        <i class="material-icons">video_call</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="pointer">
+                        <i class="material-icons">apps</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="pointer">
+                        <i class="material-icons">notifications</i>
+                    </a>
+                </li>
+                <li class="user-profile">
+                    <a>
+                        <img class="profile-img img-fluid" src="images/default/eastjun_profile.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="side-nav mrg-top-60">
+        <div class="side-nav-inner">
+            <ul class="side-nav-menu scrollable">
+                <li class="nav-item">
+                    <a class="mrg-top-30" href="index.html">
+                        <span class="icon-holder">
+                            <i class="material-icons">home</i>
+                        </span>
+                        <span class="title relative bottom-5">홈</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="" href="index.html">
+                        <span class="icon-holder">
+                            <i class="material-icons">hearing</i>
+                        </span>
+                        <span class="title relative bottom-5">인기</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="" href="index.html">
+                        <span class="icon-holder">
+                            <i class="material-icons">subscriptions</i>
+                        </span>
+                        <span class="title relative bottom-5">구독</span>
+                    </a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a class="" href="index.html">
+                        <span class="icon-holder">
+                            <i class="material-icons">folder</i>
+                        </span>
+                        <span class="title relative bottom-5">라이브러리</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="" href="index.html">
+                        <span class="icon-holder">
+                            <i class="material-icons">restore</i>
+                        </span>
+                        <span class="title relative bottom-5">최근 본 동영상</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="" href="index.html">
+                        <span class="icon-holder">
+                            <i class="material-icons">access_time</i>
+                        </span>
+                        <span class="title relative bottom-5">나중에 볼 동영상</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="" href="index.html">
+                        <span class="icon-holder">
+                            <i class="material-icons">thumb_up</i>
+                        </span>
+                        <span class="title relative bottom-5">좋아요 표시한 동영상</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-container">
+        <!-- Content Wrapper START -->
+        <div class="main-content">
+            <div class="container-fluid">
+                <div class="social">
+                    <div class="container-fluid max-width-lg">
+                        <div class="row max-height-300px">
+                            <div class="col-lg-4 col-md-6 height-100 max-height-300px">
+                                <div class="video-container video-container-16x9">
+                                    <iframe src="https://www.youtube.com/embed/PCXlgnYekBg" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-6">
+                                <a class="social-cover ">
+                                    <div class="cover-img bg" style="background-image: url('images/default/main_banner_bg.png')"></div>
+                                    <div class="width-100 relative">
+                                        <img class="banner-owner-img img-circle relative bottom-30" src="images/default/eastjun_big.jpg" alt="">
+                                        <div class="banner-info d-inline-block relative">
+                                            <span class="font-size-17 text-bold relative left-40 bottom-20">우아한테크코스 도서관리 시스템</span>
+                                            <span class="absolute mrg-vertical-5 left-40">eastjun</span>
+                                            <button class="btn btn-info absolute top-30 left-40 border-radius-none">더 알아보기</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mrg-vertical-20 mrg-horizon-5">
+                            <h3 class="text-bold">맞춤 동영상</h3>
+                        </div>
+
+                        <div class="row pdd-horizon-10">
+                            <div class="col-lg-2 padding-2">
+                                <div class="card bg-transparent no-border">
+                                    <div class="card-media">
+                                        <img class="img-responsive" src="images/default/thumb_001.jpeg" alt="">
+                                    </div>
+                                    <div class="card-block padding-10">
+                                        <h5 class="mrg-btm-10 no-mrg-top text-bold">🦊🦆[10분 테크토크] 닉&러너덕의 점심봇</h5>
+                                        <span>우아한Tech</span>
+                                        <span class="d-block">조회수 952회 | 3일 전</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 padding-2">
+                                <div class="card bg-transparent no-border">
+                                    <div class="card-media">
+                                        <img class="img-responsive" src="images/default/thumb_002.jpeg" alt="">
+                                    </div>
+                                    <div class="card-block padding-10">
+                                        <h5 class="mrg-btm-10 no-mrg-top text-bold">🦊🦆[10분 테크토크] 닉&러너덕의 점심봇</h5>
+                                        <span>우아한Tech</span>
+                                        <span class="d-block">조회수 952회 | 3일 전</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 padding-2">
+                                <div class="card bg-transparent no-border">
+                                    <div class="card-media">
+                                        <img class="img-responsive" src="images/default/thumb_003.jpeg" alt="">
+                                    </div>
+                                    <div class="card-block padding-10">
+                                        <h5 class="mrg-btm-10 no-mrg-top text-bold">🦊🦆[10분 테크토크] 닉&러너덕의 점심봇</h5>
+                                        <span>우아한Tech</span>
+                                        <span class="d-block">조회수 952회 | 3일 전</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 padding-2">
+                                <div class="card bg-transparent no-border">
+                                    <div class="card-media">
+                                        <img class="img-responsive" src="images/default/thumb_004.jpeg" alt="">
+                                    </div>
+                                    <div class="card-block padding-10">
+                                        <h5 class="mrg-btm-10 no-mrg-top text-bold">🦊🦆[10분 테크토크] 닉&러너덕의 점심봇</h5>
+                                        <span>우아한Tech</span>
+                                        <span class="d-block">조회수 952회 | 3일 전</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 padding-2">
+                                <div class="card bg-transparent no-border">
+                                    <div class="card-media">
+                                        <img class="img-responsive" src="images/default/thumb_005.jpeg" alt="">
+                                    </div>
+                                    <div class="card-block padding-10">
+                                        <h5 class="mrg-btm-10 no-mrg-top text-bold">🦊🦆[10분 테크토크] 닉&러너덕의 점심봇</h5>
+                                        <span>우아한Tech</span>
+                                        <span class="d-block">조회수 952회 | 3일 전</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 padding-2">
+                                <div class="card bg-transparent no-border">
+                                    <div class="card-media">
+                                        <img class="img-responsive" src="images/default/thumb_006.jpeg" alt="">
+                                    </div>
+                                    <div class="card-block padding-10">
+                                        <h5 class="mrg-btm-10 no-mrg-top text-bold">🦊🦆[10분 테크토크] 닉&러너덕의 점심봇</h5>
+                                        <span>우아한Tech</span>
+                                        <span class="d-block">조회수 952회 | 3일 전</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Wrapper END -->
+
+    </div>
+
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+<!--<script src="js/index.js"></script>-->
+<script>
+    // Main JavaScripts
+
+    (function ($) {
+        'use strict';
+
+        // Side Nav
+        function sideNav() {
+            $('.side-nav .side-nav-menu li a').on('click', function(e) {
+                if ($(this).parent().hasClass("open")) {
+
+                    $(this).parent().children('.dropdown-menu').slideUp(200, function() {
+                        $(this).parent().removeClass("open");
+                    });
+
+                } else {
+                    $(this).parent().parent().children('li.open').children('.dropdown-menu').slideUp(200);
+                    $(this).parent().parent().children('li.open').children('a').removeClass('open');
+                    $(this).parent().parent().children('li.open').removeClass("open");
+                    $(this).parent().children('.dropdown-menu').slideDown(200, function() {
+                        $(this).parent().addClass("open");
+                    });
+                }
+            });
+        }
+
+        // Side Nav Toogle
+        function sideNavToggle() {
+            $('.side-nav-toggle').on('click', function(e) {
+                $('.app').toggleClass("is-collapsed");
+                e.preventDefault();
+            });
+        }
+
+        // Side Panel Toogle
+        function sidePanelToggle() {
+            $('.side-panel-toggle').on('click', function(e) {
+                $('.side-panel').toggleClass("side-panel-open");
+                e.preventDefault();
+            });
+        }
+
+        // Chat Toggle
+        function chatToggle() {
+            $('.chat-toggle').on('click', function(e) {
+                $('.chat').toggleClass("open");
+                e.preventDefault();
+            });
+        }
+
+        // Todo Toggle
+        function todoToggle() {
+            $('.todo-toggle').on('click', function(e) {
+                $('.todo-wrapper').toggleClass("open");
+                e.preventDefault();
+            });
+        }
+
+        // Search Toggle
+        function searchToggle() {
+            $('.search-toggle').on('click', function(e) {
+                $('.search-box, .search-input').toggleClass("active");
+                $('.search-input input').focus();
+                e.preventDefault();
+            });
+        }
+
+        // Advance Search
+        function advanceSearch() {
+            $('.search-input input').on('keyup',function(){
+                if($(this).val().length > 0) {
+                    $('.advanced-search').addClass("active");
+                }
+                else {
+                    $('.advanced-search').removeClass("active");
+                }
+                $('.serach-text-bind').html($(this).val());
+            })
+        }
+
+        // Theme Configurator
+        function themeConfig() {
+            $('.theme-toggle, .config-close').on('click', function(e) {
+                $('.theme-configurator').toggleClass("theme-config-open");
+                e.preventDefault();
+            });
+        }
+
+        // Perfect Scroll Bar
+        function perfectSB() {
+            $('.scrollable').perfectScrollbar();
+        }
+
+        //Card Portlet Refresh
+        function cardPortletCtrl() {
+
+            //card refresh
+            $('[data-toggle=card-refresh]').on('click',function(e) {
+                var cardRefreshSelector = $(this).parents('.card');
+                cardRefreshSelector.addClass('card-refresh');
+                window.setTimeout(function () {
+                    cardRefreshSelector.removeClass('card-refresh');
+                }, 2000);
+                e.preventDefault();
+                e.stopPropagation();
+            });
+
+            //card delete
+            $('[data-toggle=card-delete]').on('click',function(e) {
+                var cardDeleteSelector = $(this).parents('.card');
+                cardDeleteSelector.addClass('animated zoomOut');
+                cardDeleteSelector.bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+                    cardDeleteSelector.remove();
+                });
+                e.preventDefault();
+                e.stopPropagation();
+            });
+        }
+
+        //Theme Config
+        function themeColorConfig() {
+
+            $(".header-default input").change(function() {
+                $('.app').removeClass("header-primary header-info header-success header-danger header-dark");
+            })
+
+            $(".header-info input").change(function() {
+                $('.app').addClass("header-info")
+                $('.app').removeClass("header-primary header-success header-danger header-dark");
+            });
+
+            $(".header-primary input").change(function() {
+                $('.app').addClass("header-primary")
+                $('.app').removeClass("header-info header-success header-danger header-dark");
+            });
+
+            $(".header-success input").change(function() {
+                $('.app').addClass("header-success")
+                $('.app').removeClass("header-info header-primary header-danger header-dark");
+            });
+
+            $(".header-danger input").change(function() {
+                $('.app').addClass("header-danger")
+                $('.app').removeClass("header-info header-primary header-success header-dark");
+            });
+
+            $(".header-dark input").change(function() {
+                $('.app').addClass("header-dark")
+                $('.app').removeClass("header-info header-primary header-success header-danger");
+            });
+
+            $(".theme-colors.side-nav-dark input").change(function() {
+                $('.app').addClass("side-nav-dark")
+                $('.app').removeClass("side-nav-default");
+            });
+
+            $(".theme-colors.sidenav-default input").change(function() {
+                $('.app').addClass("side-nav-default")
+                $('.app').removeClass("side-nav-dark");
+            });
+
+            $('#rtl-toogle').on('click', function(e) {
+                $('.app').toggleClass("rtl");
+                e.preventDefault();
+            });
+        }
+
+
+
+        function init() {
+            sideNav();
+            sideNavToggle();
+            sidePanelToggle();
+            chatToggle();
+            todoToggle();
+            searchToggle();
+            advanceSearch();
+            themeConfig();
+            perfectSB();
+            cardPortletCtrl();
+            themeColorConfig();
+        }
+        init();
+    })(jQuery);
+</script>
+</body>
+</html>
