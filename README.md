@@ -11,9 +11,9 @@
 </p>
 <p align="middle">성공한 서비스들을 따라 만들어보는 팀 미니프로젝트 주제</p>
 <p align="middle">
-    <a href="https://github.com/woowacourse/miniprojects/tree/master/wootecobook"><strong>Wootecobook</strong></a> /
-    <a href="https://github.com/woowacourse/miniprojects/tree/master/woostagram"><strong>Woostagram</strong></a> /
-    <a href="https://github.com/woowacourse/miniprojects/tree/master/wootube"><strong>Wootube</strong></a>
+    <a href="https://woowacourse.github.io/miniprojects/wootecobook/"><strong>Wootecobook</strong></a> /
+    <a href="https://woowacourse.github.io/miniprojects/woostagram/"><strong>Woostagram</strong></a> /
+    <a href="https://woowacourse.github.io/miniprojects/wootube/"><strong>Wootube</strong></a>
 </p>
 
 
