@@ -1,3 +1,114 @@
+header ul.nav-right li, header ul.nav-left li {
+    height: 43px;
+}
+
+.header {
+    background-color: #4267b2;
+    border-bottom: 1px solid #29487d;
+    color: white;
+    height: 43px;
+    top: 0px;
+}
+
+.logo {
+    background-repeat: no-repeat;
+    -webkit-background-size: 283px 396px;
+    background-size: 283px 396px;
+    background-position: -125px -304px;
+    height: 24px;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    white-space: nowrap;
+    width: 24px;
+}
+
+.header .header-container .nav-left>li>a, .header .header-container .nav-right>li>a {
+    min-height: 43px;
+}
+
+.search{
+    width: 400px;
+    height: 25px;
+    max-width: 400px;
+    position: absolute;
+    top: 4px;
+    left: 50px;
+    margin: 5px 200px 5px 5px;
+    padding: 2px 2px 2px 4px;
+    border-radius: 3px;
+    background: white;
+}
+.searchbox{
+    width: 378px;
+    height: 18px;
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    border: 0 none white;
+    margin: 0;
+    padding: 0;
+    font-size: 10pt;
+    outline-style: none;
+}
+.search-btn {
+    width: 27px;
+    height: 17px;
+    position: absolute;
+    top: 4px;
+    left: 370px;
+    background: none;
+    background-image: url('../images/default/icons.png');
+    background-position: -26px -202px;
+    border-style: none;
+    border-left: 1px solid rgb(220, 220, 220);
+}
+
+.user-profile {
+    height: 43px;
+}
+
+.profile-img {
+    width: 24px;
+    height: 24px;
+}
+
+.friend-btn {
+    background-size: 283px 396px;
+    background-position: 0 -354px;
+}
+
+.message-btn {
+    background-size: 283px 396px;
+    background-position: -50px -354px;
+}
+
+.notification-btn {
+    background-size: 283px 396px;
+    background-position: -175px -329px;
+}
+
+.friend-btn, .message-btn, .notification-btn {
+    background-image: url('../images/default/icons.png');
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+}
+
+.story-user-list {
+    height: 55px;
+    width: 100%;
+}
+
+.bg-lightgray {
+    background-color: #f5f6f7;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+
 .left{
     width: 164px;
     position: relative;
@@ -72,7 +183,8 @@
     margin: 3.5px;
     vertical-align: middle;
     display: inline-block;
-    background-image: url('/images/default/icons2.png');
+    background-image: url('../images/default/icons2.png');
+    background-repeat: no-repeat;
 }
 .icon-name {
     vertical-align: middle;
@@ -81,38 +193,40 @@
 .icons.newspeed {
     background-position: 0 -711px;
     background-size: 37px 1608px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
 }
+
 .icons.message {
     background-position: 0 -186px;
     background-size: 37px 1608px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
 }
+
 .icons.watch {
     background-position: 0 -1110px;
     background-size: 37px 1608px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
 }
 
 .icons.group {
     background-position: 0 -879px;
     background-size: 37px 1608px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
+}
+
+.icons.photo-video {
+    background-position: 0 -837px;
+    background-size: 37px 1608px;
+}
+
+.icons.tag-friend {
+    background-position: 0 -543px;
+    background-size: 37px 1608px;
+}
+
+.icons.feeling-activity {
+    background-position: 0 -501px;
+    background-size: 37px 1608px;
 }
 
 .left-group-title{
     font-weight: bold;
     color: #616770;
 }
+
