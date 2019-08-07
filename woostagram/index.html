@@ -40,9 +40,29 @@
         <div class="header-container max-width-lg mx-auto">
             <ul class="nav-left mrg-left-0 padding-15">
                 <li>
-                    <img class="logo desktop-logo" src="images/logo/instgram_logo.png">
-                    <div class="width-40px mobile-logo overflow-hidden">
+                    <img class="logo desktop-view" src="images/logo/instgram_logo.png">
+                    <div class="width-40px mobile-view overflow-hidden">
                         <img class="logo" src="images/logo/instgram_logo.png">
+                    </div>
+                </li>
+                <li class="search-box mrg-left-20 desktop-view">
+                    <a class="search-toggle no-pdd-right" href=";">
+                        <i class="search-icon ti-search pdd-right-10 font-size-25"></i>
+                        <i class="search-icon-close ti-close pdd-right-10 font-size-25"></i>
+                    </a>
+                </li>
+                <li class="search-input desktop-view">
+                    <input class="form-control mrg-top-0" type="text" placeholder="Search...">
+                    <div class="advanced-search">
+                        <div class="search-wrapper">
+                            <div class="pdd-vertical-10">
+                                <ul class="list-unstyled list-info">
+                                    <li class="search-result-item">
+                                        <a href="" class="text-dark">#우테코 1기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -134,6 +154,14 @@
                                             <div class="info pdd-left-15 pdd-vertical-5">
                                                 <a href="" class="title no-pdd-vertical text-bold inline-block font-size-15">brown2</a>
                                                 <span class="font-size-14">안돌 어디갔다 온거였지?</span>
+                                                <p>
+                                                    우테코 1기 단체 사진 드디어 촬영!!!
+                                                    래밸 1 방학식
+                                                </p>
+                                                <p>
+                                                    <a href="" class="hashtag">#우테코1기</a>
+                                                    <a href="" class="hashtag">#베스트커플상</a>
+                                                </p>
                                                 <time class="font-size-8 text-gray d-block">12시간 전</time>
                                             </div>
                                         </li>
@@ -230,10 +258,35 @@
     </div>
 </div>
 
-
+<script></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+<script>
+    function searchToggle() {
+        $('.search-toggle').on('click', function(e) {
+            $('.search-box, .search-input').toggleClass("active");
+            $('.search-input input').focus();
+            e.preventDefault();
+        });
+    }
+
+    function advanceSearch() {
+        $('.search-input input').on('keyup',function(){
+            if($(this).val().length > 0) {
+                $('.advanced-search').addClass("active");
+            }
+            else {
+                $('.advanced-search').removeClass("active");
+            }
+            $('.serach-text-bind').html($(this).val());
+        })
+    }
+
+    searchToggle()
+    advanceSearch()
+
+</script>
 </body>
 </html>
