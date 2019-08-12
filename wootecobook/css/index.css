@@ -1,3 +1,7 @@
+#wootecobook-app {
+    min-width: 992px;
+}
+
 header ul.nav-right li, header ul.nav-left li {
     height: 43px;
 }
@@ -8,6 +12,7 @@ header ul.nav-right li, header ul.nav-left li {
     color: white;
     height: 43px !important;
     top: 0px;
+    min-width: 992px;
 }
 
 .logo {
@@ -21,33 +26,34 @@ header ul.nav-right li, header ul.nav-left li {
     text-indent: -999px;
     white-space: nowrap;
     width: 24px;
+    position: absolute;
+    top: 9px;
 }
 
 .header .header-container .nav-left>li>a, .header .header-container .nav-right>li>a {
     min-height: 43px;
 }
-
-.search{
-    width: 400px;
-    height: 25px;
-    max-width: 400px;
+.search-container {
     position: absolute;
-    top: 4px;
+    top: 1px;
     left: 50px;
-    margin: 5px 200px 5px 5px;
-    padding: 2px 2px 2px 4px;
+}
+
+.search {
     border-radius: 3px;
     background: white;
 }
-.searchbox{
-    width: 378px;
+.searchbox {
+    width: 400px;
     height: 18px;
     position: absolute;
     top: 3px;
     left: 7px;
     border: 0 none white;
-    margin: 0;
-    padding: 0;
+    border-radius: 3px;
+    height: 25px;
+    margin: 5px;
+    padding: 3px 10px;
     font-size: 10pt;
     outline-style: none;
 }
@@ -55,8 +61,8 @@ header ul.nav-right li, header ul.nav-left li {
     width: 27px;
     height: 17px;
     position: absolute;
-    top: 4px;
-    left: 370px;
+    top: 12px;
+    left: 383px;
     background: none;
     background-image: url('../images/default/icons.png');
     background-position: -26px -202px;
@@ -110,7 +116,6 @@ header ul.nav-right li, header ul.nav-left li {
 
 
 .left{
-    width: 164px;
     position: relative;
     display: block;
     float: left;
