@@ -3,21 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-    <title>wootecogram</title>
+    <title>woostagram</title>
     <meta name="robots" content="index, follow">
 
     <meta name="keyword" content="우아한테크코스, 프로그래밍, 개발자, 백엔드, 프론트엔드, Backend, Frontend, IOS, Android">
-    <meta name="description" id="metaDesc" content="우아한테크코스 크루 ooo의 개발 블로그">
+    <meta name="description" id="metaDesc" content="woostagram">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="우아한테크코스">
-    <meta property="og:description" id="metaOgDesc" content="우튜브">
+    <meta property="og:description" id="metaOgDesc" content="woostagram">
     <meta property="og:image" content="images/logo/logo-thumnail-bg.jpg">
     <meta property="og:url" content="https://woowacourse.github.io/">
 
     <meta name="twitter:card" content="website">
     <meta name="twitter:title" content="우아한테크코스">
-    <meta name="twitter:description" id="metaTwitterDesc" content="우튜브">
+    <meta name="twitter:description" id="metaTwitterDesc" content="woostagram">
     <meta name="twitter:image" content="images/logo/logo-thumnail-bg.jpg">
     <meta name="twitter:domain" content="https://woowacourse.github.io/">
 
@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri:400,400i|Source+Sans+Pro:400,400i,600,700'">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -122,7 +121,7 @@
                             <ul class="feed-action pdd-horizon-15 pdd-top-5">
                                 <li>
                                     <a href="">
-                                        <i class="fa fa-heart-o font-size-22"></i>
+                                        <i class="fa fa-heart-o font-size-25"></i>
                                     </a>
                                 </li>
                                 <li>
@@ -137,7 +136,7 @@
                                 </li>
                                 <li class="float-right">
                                     <a href="" class="pdd-right-0">
-                                        <i class="fa fa-bookmark-o font-size-22"></i>
+                                        <i class="fa fa-bookmark-o font-size-25"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -168,6 +167,17 @@
                                     </ul>
                                     <div class="add-comment relative">
                                         <textarea rows="1" class="form-control text-dark padding-15" placeholder="댓글 달기..."></textarea>
+                                        <select id="selectize-tags-1" name="person" multiple class="item-info">
+                                            <option value="" disabled selected>Select a person...</option>
+                                            <option value="1">Adam</option>
+                                            <option value="2" selected>Amalie</option>
+                                            <option value="3">Estefanía</option>
+                                            <option value="4">Adrian</option>
+                                            <option value="5">Wladimir</option>
+                                            <option value="6">Samantha</option>
+                                            <option value="7">Nicole</option>
+                                            <option value="8" selected>Michael</option>
+                                        </select>
                                         <div class="absolute top-5 right-0">
                                             <button class="btn btn-default no-border text-gray">게시</button>
                                         </div>
@@ -206,7 +216,7 @@
                             <ul class="feed-action pdd-horizon-15 pdd-top-5">
                                 <li>
                                     <a href="">
-                                        <i class="fa fa-heart activated-heart font-size-22"></i>
+                                        <i class="fa fa-heart activated-heart font-size-25"></i>
                                     </a>
                                 </li>
                                 <li>
@@ -221,7 +231,7 @@
                                 </li>
                                 <li class="float-right">
                                     <a href="" class="pdd-right-0">
-                                        <i class="fa fa-bookmark font-size-22"></i>
+                                        <i class="fa fa-bookmark font-size-25"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -263,30 +273,33 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
 <script>
-    function searchToggle() {
-        $('.search-toggle').on('click', function(e) {
-            $('.search-box, .search-input').toggleClass("active");
-            $('.search-input input').focus();
-            e.preventDefault();
-        });
+    function searchToggleEventListenerr() {
+        document.querySelector('.search-toggle').addEventListener('click', toggleSearchInput)
     }
 
-    function advanceSearch() {
-        $('.search-input input').on('keyup',function(){
-            if($(this).val().length > 0) {
-                $('.advanced-search').addClass("active");
-            }
-            else {
-                $('.advanced-search').removeClass("active");
-            }
-            $('.serach-text-bind').html($(this).val());
-        })
+    function toggleSearchInput(event) {
+        event.preventDefault();
+        document.querySelector('.search-box').classList.toggle('active')
+        document.querySelector(".search-input").classList.toggle("active")
+        document.querySelector(".search-input input").focus()
     }
 
-    searchToggle()
-    advanceSearch()
+    function advanceSearchEventListener() {
+        document.querySelector(".search-input input").addEventListener("keyup", showSearchedList)
+    }
 
+    function showSearchedList(event) {
+        if(event.target.value.length > 0) {
+            document.querySelector(".advanced-search").classList.add("active")
+        } else {
+            document.querySelector(".advanced-search").classList.remove("active")
+            $('.advanced-search').removeClass("active");
+        }
+    }
+    searchToggleEventListenerr()
+    advanceSearchEventListener()
 </script>
 </body>
 </html>
