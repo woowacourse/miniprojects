@@ -1,3 +1,9 @@
+@media only screen and (max-width:767px){
+    .main-banner-cover {
+        display: none;
+    }
+}
+
 header ul.nav-right li, header ul.nav-left li {
     height: 56px;
 }
@@ -65,7 +71,6 @@ header ul.nav-right li, header ul.nav-left li {
 .video-container {
     position: relative;
     height: 0;
-    /*max-height: 370px;*/
     overflow: hidden;
 }
 
@@ -77,7 +82,7 @@ header ul.nav-right li, header ul.nav-left li {
     height: 100%;
 }
 
-.social-cover .cover-img {
+.main-banner-cover .cover-img {
     height: 130px;
 }
 
